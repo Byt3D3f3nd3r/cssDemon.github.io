@@ -1,0 +1,237 @@
+@import url("reset.css");
+@import url("http://fnt.webink.com/wfs/webink.css/?project=a1ecd084-1311-4405-9492-ca4f8b8cc9a0&fonts=3A13BFCA-7DC7-D1EE-757E-40EF7086214E:f=Calluna-Regular,5E820058-7465-4DA1-4BD6-0A1584A7F5E3:f=AdelleSans-ThinItalic,94250451-B08F-6072-C8B8-6FDBBC9684ED:f=FuturaPTHeavy-Reg,8BBF3477-2910-4899-CC4F-D0A4AE61477F:f=MuseoSans-100,12DB31B3-C1CD-3334-9043-C0D5318BD108:f=RooneySansWeb-Regular,92F3D8FF-2210-715D-CF2F-A674FCB8BA5B:f=Adelle-Thin,588E3300-A50D-4569-0A49-F8B0677426C6:f=MinionPro-CnItCapt,49EB541C-40FA-3D7C-6CB7-A4F272CAD108:f=MinionPro-Regular,BFBD959B-6944-F1DC-20B6-9084389D593C:f=KeplerStd-Regular,C79BD00C-07B7-C678-2678-DBD951333287:f=P22Symphony,35439AB4-AE5C-6414-19AF-3BEAA3F5D579:f=AktivGrotesk-Regular,99B90B52-FC86-D532-91E2-93D2FC4AE03D:f=FuturaPTBook-Reg,33CB6FE4-5602-5874-DBFF-526EB6E0F2B7:f=FranklinGotURWT-Lig,48B9EDA5-58E9-FF76-E51B-585D8BA81793:f=URWGaramondT-DemIta,2F960C14-6589-2634-013D-59BD713141A3:f=FranklinGotURWT-Boo,4E5B817B-633D-E2C2-8120-FBBC0786B815:f=AGaramondPro-Semibold,CD6652B9-C61A-F4C0-53F5-E2A0EBC487B4:f=AktivGrotesk-Bold,9053F413-A2C6-FE2A-4C71-054948F9C395:f=AGaramondPro-Bold,835165A1-1228-CBD9-703B-0659517C5E59:f=KeplerStd-ItCapt,3F774EB4-57EF-FBC2-9230-5DC6FBDD3322:f=Alpha-Reg");@import url("http://fnt.webink.com/wfs/webink.css/?project=a1ecd084-1311-4405-9492-ca4f8b8cc9a0&fonts=49084C4C-16B8-3BE4-468D-A83E50D809C7:f=AktivGrotesk-Medium,00AC4E64-6F6B-73AC-A617-BF560BFA84CE:f=AktivGrotesk-Hairline,08BF097E-4A7D-517F-62CA-551994C5B971:f=CalibanStd,F9035255-CE32-045E-9AB2-4032D913936F:f=FuturaPTCondMedium-Reg,F157AFED-423B-C07A-7B5D-D01E92909E9D:f=FloodStd,A7FD2240-7153-E30A-168B-9BD38D326017:f=MuseoSans-900,3ADF0713-3388-8371-8FC2-3CBA9D020557:f=AGaramondPro-Regular,6156719D-9AB2-B4FC-046D-BBFB2F2760B4:f=FranklinGotURWT-Dem,2387602E-F410-98CA-6CC7-45AD958A1121:f=ProximaNovaA-Light,C6D73DCF-3F95-B841-3D11-EE57CB9CEE52:f=ProximaNovaA-Thin,AF8F15B8-3DDD-1FA8-0C4A-E80268665ADA:f=URWBaskerT-RegIta,7E19CCB1-7955-6BC4-0CB2-49962C73CBD7:f=ProximaNovaACond-ThinIt,4AAC7B88-B15E-DA79-7CCD-773AEB1CB593:f=LTCArtscriptRegular,37437296-19E9-5916-9448-2D4ADE086DC5:f=AdelleWeb-Regular,721953A0-B298-ABC7-14E1-F322FF171627:f=Melody,6A731DEA-219D-CF57-9893-8DE078AC2D3E:f=AktivGrotesk-Thin"); 
+/*
+background-color: #0f5966; = nav
+background-color: #ea2e49; = main_content
+*/
+
+ body {
+    font-size: 100%;
+    line-height: 1.5em;
+    font-family: "FuturaPTBook-Reg";
+    background-color: rgb(68, 73, 91);
+    /*background: rgb(68, 73, 91) url("http://www.baselineme.com/24") center top repeat;*/
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.main_content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-left: 50px;
+    background-color: #060606;
+    color: #ffffff;
+    overflow: hidden;
+}
+
+nav {
+    position: fixed;
+    width: 100px;
+    height: 100%;
+    z-index: 800;
+    background-color: #212121;
+}
+
+.nav_wrap {
+    position: absolute;
+    width: 300px;
+    height: 100%;
+    top: 0;
+    left: -300px;
+    background-color: #333745;
+    z-index: 99999;
+}
+
+.nav_bar {
+    position: relative;
+    width: 100px;
+    height: 100%;
+    z-index: 99999;
+}
+
+.brand {
+    text-indent: 9999em;
+    font-weight: normal;
+    font-family: "FuturaPTHeavy-Reg";
+    font-size: 7.5em;
+    line-height: 1em;
+    text-align: left;
+    margin: 1em auto 1em auto;
+    letter-spacing:-0.0625em; 
+    height: 200px;
+    overflow: hidden;
+    background: url("../img/name.png") center bottom no-repeat;
+}
+
+ul.places {
+    padding-top: 1.5em;
+    text-align: center;
+}
+
+ul.places li{
+    display: inline-block;
+    position: relative;
+    text-transform: uppercase;
+    padding-left: 1em;
+    font-family: "FuturaPTHeavy-Reg";
+}
+
+ul.places li:first-of-type {
+    padding-left: 0;
+}
+
+ul.places li:before {
+    content: "|";
+    position: absolute;
+    left: 0.1em;
+    top: -0.1em;
+}
+
+ul.places li:first-of-type:before {
+    content: none;
+}
+
+#date {
+    text-align: center;
+    font-size: 0.875em;
+    line-height: 1.7142em;
+    display: block;
+    text-transform: uppercase;
+    color: #7C7C7C;
+}
+
+ul.options {
+    position: absolute;
+    list-style-type: none;
+    bottom: 39%;
+    left: 0;
+    z-index: 999999;
+}
+
+ul.options li {
+    margin-left: 2em;
+}
+
+ul.options li a {
+    display: block;
+    font-size: 1.313em;
+    line-height: 0.875em;
+    margin-bottom: 0.875em;
+    text-transform: uppercase;
+    color: #daede2;
+    text-decoration: none;
+}
+
+ul.options li a:hover {
+    color: #f2f2f2;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 99999999999;
+    color: #daede2;
+}
+
+footer span {
+    display: block;
+    text-transform: uppercase;
+    margin-left: 2.1em;
+    font-size: 0.875em;
+    line-height: 1.7142em;
+}
+
+footer span a {
+    text-decoration: none;
+    color: #daede2;
+}
+
+.rights {
+    margin-bottom: 1.7142em;
+}
+
+.swap {
+     margin-bottom: 1.7142em;
+}
+
+#ggs-switch{
+    position:absolute;
+    top:50%;
+    right:35%;
+    z-index:99999999999999;
+    width:35px;
+    height:24px;
+    -moz-transform:rotate(0deg);
+    -webkit-transform:rotate(0deg);
+    -webkit-transition:all 0.15s ease-out;
+    -moz-transition:all 0.15s ease-out;
+    cursor:pointer;
+}
+
+#ggs-switch-animated{
+    position:absolute;
+    top:50%;
+    right:35%;
+    z-index:99999999999999;
+    width:35px;
+    height:24px;
+    -moz-transform:rotate(90deg);
+    -webkit-transform:rotate(90deg);
+    -webkit-transition:all 0.15s ease-out;
+    -moz-transition:all 0.15s ease-out;
+    cursor:pointer;
+}
+
+.ggs-switchBar{
+    height:4px;
+    background:rgb(218,237,226);
+    margin-bottom:4px;
+}
+
+/****** image stream ******/
+.dot {
+    position: absolute;
+    width: 178px;
+    height: 178px;
+    top: 1em;
+    z-index: 999999999;
+    overflow: hidden;
+    left: 45%;
+    top: 50%;
+    border: 1px solid #fff;
+    -webkit-border-radius:100%;
+    -moz-border-radius:100%;
+    border-radius:100%;
+     overflow: hidden;
+}
+
+.dot img {
+    -webkit-border-radius:100%;
+    -moz-border-radius:100%;
+    border-radius:100%;
+}
+
+.stream-bar {
+    position: absolute;
+    height: 3000px;
+}
+
+.img-frame {
+    position: relative;
+    /*overflow: hidden;*/
+    width: 178px;
+}
+
+.img-frame img {
+    position: relative;
+    display: block;
+    max-width: inherit;
+    /*vertical-align: middle;*/
+    right: 10%;
+}
