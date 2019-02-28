@@ -84,17 +84,12 @@
                         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                             <ul class="nav navbar-nav">
                                 <li class="dropdown submenu active">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Home <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="index.html">Home Page</a></li>
-                                    </ul>
+                                    <a href="index.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Home <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
                                 </li>
                                 <li class="submenu dropdown">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Rooms <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
                                     <ul class="dropdown-menu">
-                                        <li><a href="room.html">Rooms Grid Style</a></li>
-                                        <li><a href="room-list.html">Rooms List Style</a></li>
-                                        <li><a href="room-details.html">Single Room</a></li>
+                                        <li><a href="">Rooms Grid Style</a></li>
                                     </ul>
                                 </li>
                                 <li class="submenu dropdown">
@@ -102,27 +97,10 @@
                                     <ul class="dropdown-menu">
                                         <li><a href="">Aminities</a></li>
                                         <li><a href="">Search</a></li>
-                                        <li class="dropdown submenu">
-                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Events</a>
-                                            <ul class="dropdown-menu">
-                                                <li><a href="">-  Event List</a></li>
-                                                <li><a href="">-  Event Grid</a></li>
-                                                <li><a href="">-  Event Single</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="dropdown submenu">
-                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Gallery</a>
-                                            <ul class="dropdown-menu">
-                                                <li><a href="">-  Gallery 2 Column</a></li>
-                                                <li><a href="">-  Gallery 3 Column</a></li>
-                                                <li><a href="">-  Gallery Cobage</a></li>
-                                            </ul>
-                                        </li>
                                         <li><a href="">Our Reataurant</a></li>
                                         <li><a href="">Spa & Relax</a></li>
                                         <li><a href="">Activities</a></li>
                                         <li><a href="">Coming Soon page</a></li>
-                                        <li><a href="">404 Error</a></li>
                                     </ul>
                                 </li>
                                 <li><a href="about-us.html">About Us</a></li>
@@ -169,25 +147,25 @@
             </div>
             <div class="book_room_area">
                 <!---------Testing------>
-                <form class="book_room_box" action="reservation.php" method="post" enctype="multipart/form-data" id="contactForm" novalidate="validate">
+                <form class="book_room_box" action="mailto:john@gmail.com?Subject=Hotel%20Reservations" method="post" enctype="text/plain" id="contactForm" novalidate="validate">
                     <div class="book_table_item">
-                        <h3>Book Room</h3>
+                        <h3>Make Reservation</h3>
                     </div>
                     <div class="book_table_item">
                         <div class="input-append date form_datetime">
-                            <input size="16" type="text" value="" name="arrivaldate" readonly placeholder="Arrival Date">
+                            <input size="16" type="text" value="" name="Arrival Date" readonly placeholder="Arrival Date">
                             <span class="add-on"><i class="fa fa-calendar" aria-hidden="true"></i></span>
                         </div>    
                     </div>
                     
                     <div class="book_table_item">
                         <div class="input-append date form_datetime">
-                            <input size="16" type="text" value="" name="departuredate" readonly placeholder="Departure Date">
+                            <input size="16" type="text" value="" name="Departure Date" readonly placeholder="Departure Date">
                             <span class="add-on"><i class="fa fa-calendar" aria-hidden="true"></i></span>
                         </div>
                     </div>
                     <div class="book_table_item">
-                        <select class="selectpicker" name="adult">
+                        <select class="selectpicker" name="Adult">
                             <option>Adults</option>
                             <option>1</option>
                             <option>2</option>
@@ -195,25 +173,26 @@
                         </select>
                     </div>
                     <div class="book_table_item">
-                        <select class="selectpicker" name="children">
+                        <select class="selectpicker" name="Children">
                             <option>Children</option>
+                            <option>0</option>
                             <option>1</option>
                             <option>2</option>
                         </select>
                     </div>
                     <div class="book_table_item">
                         <div class="form-group">
-                            <input type="text" class="form-control" id="" name="fullname" placeholder="Fullname.">
+                            <input type="text" class="form-control" id="" name="Fullname" placeholder="Fullname.">
                         </div>    
                     </div>
                     <div class="book_table_item">
                         <div class="form-group">
-                            <input type="text" class="form-control" id="" name="email" placeholder="Email.">
+                            <input type="email" class="form-control" id="" name="Email" placeholder="Email." name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
                         </div>    
                     </div>
                     <div class="book_table_item">
                         <!--<a class="book_now_btn_black" href="" >Make Reservations</a>-->
-                        <button id="myBtn" type="submit" value="submit" class="btn submit_btn_black form-control">Make Reservations</button>
+                        <button type="submit" value="submit" class="btn submit_btn_black form-control">Make Reservations</button>
                     </div>
                 </form>
                 <!-------->    
